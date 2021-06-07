@@ -1,6 +1,8 @@
 package com.green.Practice;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -29,14 +31,20 @@ public class LoginAction extends HttpServlet {
 		String userId = request.getParameter("userId");
 		String userPw = request.getParameter("userPw");
 		
-		String id = "gkrwnsvb";
+		String id = "green";
 		String pw = "1234";
 		
+		response.setContentType("text/html;charset=UTF-8");
+		PrintWriter out = response.getWriter();
+		out.println("<html><head>");
+		out.println("</head>");
+		out.println("<body>");
 		if(id.equals(userId) && pw.equals(userPw)) {
-			System.out.println("로그인 성공");
+			out.println("<h1>"+"로그인성공"+"</h1>");
 		}else {
-			System.out.println("로그인 실패");
+			out.println("<h1>"+"로그인실패"+"</h1>");
 		}
+		out.println("</body></html>");
 	}
 
 	/**

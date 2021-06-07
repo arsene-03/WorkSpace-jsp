@@ -1,0 +1,71 @@
+package com.green.Practice;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class GugudanAction
+ */
+@WebServlet("/GugudanAction")
+public class GugudanAction extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public GugudanAction() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String dan2 = request.getParameter("dan2");
+		String dan3 = request.getParameter("dan3");
+		String dan4 = request.getParameter("dan4");
+		String dan5 = request.getParameter("dan5");
+		String dan6 = request.getParameter("dan6");
+		String dan7 = request.getParameter("dan7");
+		String dan8 = request.getParameter("dan8");
+		String dan9 = request.getParameter("dan9");
+		
+		int daan2 = Integer.parseInt(dan2);
+		int daan3 = Integer.parseInt(dan3);
+		int daan4 = Integer.parseInt(dan4);
+		int daan5 = Integer.parseInt(dan5);
+		int daan6 = Integer.parseInt(dan6);
+		int daan7 = Integer.parseInt(dan7);
+		int daan8 = Integer.parseInt(dan8);
+		int daan9 = Integer.parseInt(dan9);
+		
+		response.setContentType("text/html;charset=UTF-8");
+		
+		PrintWriter out = response.getWriter();
+		out.println("<html><head></head>");
+		out.println("<body>");
+		out.println("<table border=1>");
+		for(int i=0;i<;i++) {
+			
+		}
+		
+		
+		
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}
