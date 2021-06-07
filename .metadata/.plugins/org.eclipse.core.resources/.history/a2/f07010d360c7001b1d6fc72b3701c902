@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="scoreAction" method="GET">
+		첫번째 점수를 입력해주세요<input type="number" value="score1"> <br>
+		두번째 점수를 입력해주세요<input type="number" value="score2"> <br>
+		세번째 점수를 입력해주세요<input type="number" value="score3"> <br>
+		네번째 점수를 입력해주세요<input type="number" value="score4"> <br>
+		다섯번째 점수를 입력해주세요<input type="number" value="score5"> <br>
+		<input type="submit" value="저장">
+	</form>
+</body>
+</html>
