@@ -1,3 +1,11 @@
 INDEX VERSION 1.131
+C:\Study\WorkSpace-jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\340565387.index
+\ex03\src
 C:\Study\WorkSpace-jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2734224914.index
 \ex01\src
+C:\Study\WorkSpace-jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1321429133.index
+\ex03\src
+C:\Study\WorkSpace-jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4075963213.index
+\ex03\src
+C:\Study\WorkSpace-jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3552584990.index
+\Practice\src

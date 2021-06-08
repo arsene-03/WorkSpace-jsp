@@ -1,5 +1,6 @@
 #Tomcat publish data
-#Mon Jun 07 17:36:35 KST 2021
+#Tue Jun 08 12:56:41 KST 2021
 org.eclipse.jst.jee.server\:Practice=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\Practice
+org.eclipse.jst.jee.server\:ex03=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex03
 org.eclipse.jst.jee.server\:ex02=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex02
 org.eclipse.jst.jee.server\:ex01=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex01
