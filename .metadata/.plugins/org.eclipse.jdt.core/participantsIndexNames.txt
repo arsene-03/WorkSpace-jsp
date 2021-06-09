@@ -3,6 +3,10 @@ C:\Study\WorkSpace-jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\340
 \ex03\src
 C:\Study\WorkSpace-jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2734224914.index
 \ex01\src
+C:\Study\WorkSpace-jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\979075330.index
+\ex04\src
+C:\Study\WorkSpace-jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3249899397.index
+\ex04\src
 C:\Study\WorkSpace-jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1321429133.index
 \ex03\src
 C:\Study\WorkSpace-jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4075963213.index
