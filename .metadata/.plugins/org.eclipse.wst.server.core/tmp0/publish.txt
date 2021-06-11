@@ -1,7 +1,8 @@
 #Tomcat publish data
-#Wed Jun 09 17:47:59 KST 2021
-org.eclipse.jst.jee.server\:ex04=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex04
+#Fri Jun 11 17:56:02 KST 2021
+org.eclipse.jst.jee.server\:ex07=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex07
 org.eclipse.jst.jee.server\:Practice=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\Practice
+org.eclipse.jst.jee.server\:ex04=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex04
 org.eclipse.jst.jee.server\:ex03=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex03
 org.eclipse.jst.jee.server\:ex02=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex02
 org.eclipse.jst.jee.server\:ex01=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex01
