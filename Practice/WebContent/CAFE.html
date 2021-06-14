@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="CAFE.jsp" method="GET">
+		<div>
+			<label for="coffee"></label>
+			<select name="coffee" id="coffee">
+				<option value="dolceLatte">돌체 라떼</option>
+				<option value="whiteChocoMocha">화이트 초콜릿 모카</option>
+				<option value="cafeMocha">카페 모카</option>
+				<option value="cafeLatte">카페 라떼</option>
+				<option value="americano" selected>아메리카노</option>
+				<option value="todaycoffee">오늘의 커피</option>
+				<option value="bvdm">블론드 바닐라 더블샷 마키야또</option>
+			</select>
+		</div>
+		<div>
+			<label for="cupSize"></label>
+			<select name="cupSize" id="cupSize">
+				<option value="tall">톨</option>
+				<option value="grande">그란데</option>
+				<option value="venti">벤티</option>
+			</select>
+		</div>
+		<div>
+		<input type="number" name="num" min="1">잔
+		</div>			
+		<button type="submit">선택</button>
+	</form>
+</body>
+</html>
