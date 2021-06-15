@@ -16,7 +16,7 @@
 	PreparedStatement psmt = null;
 	ResultSet rs = null;
 		
-	String url = "jbdc:oracle:thin:@localhost:1521:XE";
+	String url = "jdbc:oracle:thin:@localhost:1521:XE";
 	String uId = "greenJSP";
 	String uPw = "1234";
 %>
@@ -24,7 +24,8 @@
 	request.setCharacterEncoding("UTF-8");
 	String coffeeName = request.getParameter("coffeeName");
 	String cupSize = request.getParameter("cupSize");
-	int num = Integer.parseInt(request.getParameter("num"));
+
+	int cup = Integer.parseInt(request.getParameter("cup"));
 	String sql = "SELECT coffeeName, ? FROM cafeMenu WHERE coffeeName='?'";
 	
 	try{
@@ -36,9 +37,14 @@
 		rs = psmt.executeQuery();
 		
 		while(rs.next()){
-			session.setAttribute("coffeeName", rs.getString("coffeeName"));
-			session.setAttribute("type", cupSize);
-			session.setAttribute("price", rs.getString(cupSize));
+			out.println(rs.getString("coffeeName"));
+			out.println(rs.getString("cupSize"));
+			
+			
+			//session.setAttribute("coffeeName", rs.getString("coffeeName"));
+			//session.setAttribute("type", cupSize);
+			//session.setAttribute("price", rs.getString(cupSize));
+			//response.sendRedirect("aa.jsp");
 		}
 		
 	}catch(Exception e){
