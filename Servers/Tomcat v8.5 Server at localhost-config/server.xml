@@ -167,8 +167,11 @@
       </Context>
       
       <Context docBase="q04" path="/q04" reloadable="true" source="org.eclipse.jst.jee.server:q04">
-      	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" 
-      		name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:XE" username="greenJSP"/>
+      	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:XE" username="greenJSP"/>
+      </Context>
+      <Context docBase="ex10" path="/ex10" reloadable="true" source="org.eclipse.jst.jee.server:ex10"/>
+      <Context docBase="ex10_product" path="/ex10_product" reloadable="true" source="org.eclipse.jst.jee.server:ex10_product">
+      	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:XE" username="greenJSP"/>
       </Context>
       </Host>
     </Engine>

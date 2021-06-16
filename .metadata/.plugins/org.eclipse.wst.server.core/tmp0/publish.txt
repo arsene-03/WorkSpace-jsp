@@ -1,13 +1,15 @@
 #Tomcat publish data
-#Tue Jun 15 17:33:21 KST 2021
+#Wed Jun 16 17:14:15 KST 2021
 org.eclipse.jst.jee.server\:ex09=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex09
 org.eclipse.jst.jee.server\:ex08=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex08
+org.eclipse.jst.jee.server\:ex10=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex10
 org.eclipse.jst.jee.server\:ex07=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex07
 org.eclipse.jst.jee.server\:ex06=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex06
 org.eclipse.jst.jee.server\:ex05=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex05
+org.eclipse.jst.jee.server\:ex10_product=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex10_product
 org.eclipse.jst.jee.server\:ex04=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex04
 org.eclipse.jst.jee.server\:ex03=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex03
 org.eclipse.jst.jee.server\:ex02=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex02
 org.eclipse.jst.jee.server\:ex01=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex01
-org.eclipse.jst.jee.server\:Practice=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\Practice
 org.eclipse.jst.jee.server\:q04=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\q04
+org.eclipse.jst.jee.server\:Practice=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\Practice
