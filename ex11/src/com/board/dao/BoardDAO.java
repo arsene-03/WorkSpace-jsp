@@ -211,9 +211,85 @@ public class BoardDAO {
 		}
 	}
 	
+	//전체 게시글 수를 알아 오는 쿼리
+	public int selectAllNumBoard() {
+		int cntAll = 0;
+		
+		String sql = "SELECT COUNT(*) FROM board";
+		
+		Connection conn = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+		
+		try {
+			conn = DBManager.getConnection();
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery(sql);
+			
+			if(rs.next()) {
+				cntAll = rs.getInt(1);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			DBManager.Close(conn, stmt, rs);
+		}
+		return cntAll;
+	}
 	
 	
-	
+	//현재 페이지 정보를 통해서 페이지 게시글 읽어오기
+	public List<BoardVO> selectTargetBoard(int section, int pageNum){
+		List<BoardVO> boardList = new ArrayList<>();
+		
+		String sql = "SELECT * FROM (SELECT ROWNUM as nic, num, name, email, pass, title, content,readcount,writedate FROM"
+				+"(SELECT * FROM board ORDER BY num DESC))" + 
+				"WHERE nic BETWEEN (?-1)*100+(?-1)*10+1 AND (?-1)*100+?*10";
+		
+		Connection conn = null;
+		PreparedStatement psmt = null;
+		ResultSet rs = null;
+		
+		try {
+			conn = DBManager.getConnection();
+			psmt = conn.prepareStatement(sql);
+			psmt.setInt(1, section);
+			psmt.setInt(2, pageNum);
+			psmt.setInt(3, section);
+			psmt.setInt(4, pageNum);
+			
+			rs = psmt.executeQuery();
+			
+			while(rs.next()) {
+				BoardVO bVo = new BoardVO();
+				bVo.setNum(rs.getInt("num"));
+				bVo.setName(rs.getString("name"));
+				bVo.setEmail(rs.getString("email"));
+				bVo.setPass(rs.getString("pass"));
+				bVo.setTitle(rs.getString("title"));
+				bVo.setContent(rs.getString("content"));
+				bVo.setReadcount(rs.getInt("readcount"));
+				bVo.setWritedate(rs.getTimestamp("writedate") );
+				
+				boardList.add(bVo);
+			}
+		} catch (Exception e) {
+			
+		}finally {
+			DBManager.Close(conn, psmt, rs);
+		}
+		return boardList;
+		
+		
+		
+		
+		
+//		페이징을 하는 필요한 정보
+//		Section 숫자
+//		pageNum 숫자
+//		게시글리스트 리스트
+//		전체게시글 숫자
+	}
 	
 	
 	

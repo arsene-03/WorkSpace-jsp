@@ -1,5 +1,5 @@
 #Tomcat publish data
-#Thu Jun 17 17:49:49 KST 2021
+#Fri Jun 18 18:00:40 KST 2021
 org.eclipse.jst.jee.server\:ex09=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex09
 org.eclipse.jst.jee.server\:ex11=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex11
 org.eclipse.jst.jee.server\:ex08=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex08
@@ -14,3 +14,4 @@ org.eclipse.jst.jee.server\:ex02=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\
 org.eclipse.jst.jee.server\:ex01=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex01
 org.eclipse.jst.jee.server\:q04=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\q04
 org.eclipse.jst.jee.server\:Practice=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\Practice
+org.eclipse.jst.jee.server\:MovieSite=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\MovieSite

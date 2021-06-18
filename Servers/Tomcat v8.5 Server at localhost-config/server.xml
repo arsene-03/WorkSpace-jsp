@@ -174,15 +174,12 @@
       	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:XE" username="greenJSP"/>
       </Context>
       <Context docBase="ex11" path="/ex11" reloadable="true" source="org.eclipse.jst.jee.server:ex11"> 
-      	<Resource auth="Container" 
-      	driverClassName="oracle.jdbc.OracleDriver" 
-      	maxIdle="10" maxTotal="20" 
-      	maxWaitMillis="-1" 
-      	name="jdbc/myoracle" 
-      	password="1234" 
-      	type="javax.sql.DataSource" 
-      	url="jdbc:oracle:thin:@localhost:1521:XE" 
-      	username="greenJSP"/>
+      	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:XE" username="greenJSP"/>
+      </Context>
+      <Context docBase="MovieSite" path="/MovieSite" reloadable="true" source="org.eclipse.jst.jee.server:MovieSite">
+      	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" 
+      	maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" 
+      	url="jdbc:oracle:thin:@localhost:1521:XE" username="greenJSP"/>
       </Context>
       </Host>
     </Engine>
