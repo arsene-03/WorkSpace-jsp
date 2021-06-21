@@ -1,5 +1,5 @@
 #Tomcat publish data
-#Fri Jun 18 18:00:40 KST 2021
+#Sun Jun 20 15:02:24 KST 2021
 org.eclipse.jst.jee.server\:ex09=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex09
 org.eclipse.jst.jee.server\:ex11=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex11
 org.eclipse.jst.jee.server\:ex08=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex08

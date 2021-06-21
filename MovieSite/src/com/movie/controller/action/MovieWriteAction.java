@@ -17,9 +17,9 @@ public class MovieWriteAction implements Action {
 		mVo.setTitle(request.getParameter("title"));
 		mVo.setDirector(request.getParameter("director"));
 		mVo.setActor(request.getParameter("actor"));
-		mVo.setPrice(request.getParameter("price"));
+		mVo.setPrice(Integer.parseInt(request.getParameter("price")));
 		mVo.setContent(request.getParameter("content"));
-		mVo.setScore(request.getParameter("score"));
+		mVo.setScore(Double.parseDouble(request.getParameter("score")));
 		mVo.setUserid(request.getParameter("userid"));
 		mVo.setUserpwd(request.getParameter("userpwd"));
 		mVo.setSteelcut(request.getParameter("steelcut"));
