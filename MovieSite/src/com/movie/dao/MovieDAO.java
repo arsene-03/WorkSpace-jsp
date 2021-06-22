@@ -71,8 +71,8 @@ public class MovieDAO {
 	
 	public void insertMovie(MovieVO mVo) {
 		
-		String sql = "INSERT INTO favoriteMovie (title, director, actor, price, content, score, userid, userpwd, steelcut)"
-						+ "VALUES (?,?,?,?,?,?,?,?,?)";
+		String sql = "INSERT INTO favoriteMovie (code, title, director, actor, price, content, score, userid, userpwd, steelcut)"
+						+ "VALUES ('movie_'||movie_seq.nextVal,?,?,?,?,?,?,?,?,?)";
 		
 		Connection conn = null;
 		PreparedStatement psmt = null;

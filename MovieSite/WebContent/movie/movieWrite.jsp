@@ -10,11 +10,10 @@
 <body>
 	<div id="wrap">
 		<h1>영화정보 등록 페이지</h1>
-		<form action="MS" method="POST" enctype="multipart/form-data">
-			<input type="hidden" name="command" value="movie_write">
+		<form action="write.do" method="POST" enctype="multipart/form-data">
 			<table>
 				<tr>
-					<th colspan="2">아이디/ 비밀번호 (*영화정보 수정 및 삭제시 필요*)</td>
+					<th colspan="2">아이디/ 비밀번호 (*영화정보 수정 및 삭제시 필요*)</th>
 				</tr>
 				<tr>
 					<th>아이디</th>
@@ -25,7 +24,7 @@
 					<td><input type="password" name="userpwd" required>*</td>
 				</tr>
 				<tr>
-					<th colspan="2">영화정보</td>
+					<th colspan="2">영화정보</th>
 				</tr>
 				<tr>
 					<th>영화 제목</th>
@@ -49,7 +48,7 @@
 				</tr>
 				<tr>
 					<th>스틸컷(포스터)</th>
-					<td><input type="file" name="steaelcut"></td>
+					<td><input type="file" name="steelcut"></td>
 				</tr>
 				<tr>
 					<th>줄거리</th>

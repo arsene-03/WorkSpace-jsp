@@ -1,10 +1,11 @@
 #Tomcat publish data
-#Sun Jun 20 15:02:24 KST 2021
+#Tue Jun 22 18:01:04 KST 2021
 org.eclipse.jst.jee.server\:ex09=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex09
 org.eclipse.jst.jee.server\:ex11=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex11
 org.eclipse.jst.jee.server\:ex08=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex08
 org.eclipse.jst.jee.server\:ex10=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex10
 org.eclipse.jst.jee.server\:ex07=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex07
+org.eclipse.jst.jee.server\:VoteProgram=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\VoteProgram
 org.eclipse.jst.jee.server\:ex06=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex06
 org.eclipse.jst.jee.server\:ex05=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex05
 org.eclipse.jst.jee.server\:ex10_product=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex10_product
