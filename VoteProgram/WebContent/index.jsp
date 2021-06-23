@@ -8,6 +8,7 @@
 <link type="text/css" rel="stylesheet" href="css/vote.css">
 </head>
 <body>
+<div id="wrap">
 	<%@ include file="include/header.jsp"%>
 	<%@ include file="include/nav.jsp"%>
 	<section class="section">
@@ -19,5 +20,6 @@
 		<p>내용</p>
 	</section>
 <%@ include file="include/footer.jsp"%>
+</div>
 </body>
 </html>

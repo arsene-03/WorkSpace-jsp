@@ -5,6 +5,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 .hf h1{
 	margin: 0 auto;
 	background: rgb(119,134,221);
@@ -14,7 +15,7 @@
 	color: white
 }
 .hf p{
-	margin: 0 auto;
+	margin: 30px 0px auto;
 	background: rgb(119,134,221);
 	text-align: center;
 	height: 50px;
@@ -39,9 +40,15 @@ a{
 }
 section{
 	padding: 0 10px;
-	height: 80vh;
+
 }
 section h1{
 	text-align: center;
 	margin: 30px;
+}
+table {
+	text-align: center;
+}
+.in{
+	text-align: left;
 }

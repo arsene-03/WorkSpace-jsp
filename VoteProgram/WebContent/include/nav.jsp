@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <nav class="menu">
 	<ul>
-		<li><a href="VS?command=selecMember">후보조회</a></li>
+		<li><a href="VS?command=selectMember">후보조회</a></li>
 		<li><a href="VS?command=vote_form">투표하기</a></li>
 		<li><a href="VS?command=vote_list">투표검수조회</a></li>
 		<li><a href="VS?command=rank_list">후보자등수</a></li>

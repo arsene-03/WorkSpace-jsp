@@ -10,6 +10,7 @@
 <link type="text/css" rel="stylesheet" href="css/vote.css">
 </head>
 <body>
+<div id="wrap">
 	<%@ include file="../include/header.jsp"%>
 	<%@ include file="../include/nav.jsp"%>
 	<section class="section">
@@ -24,7 +25,6 @@
 				<th>지역구</th>
 				<th>대표번호</th>
 			</tr>
-			<tr>
 			<%
 				List<MemberDTO> memberlist = (List)request.getAttribute("memberlist");
 			
@@ -34,8 +34,27 @@
 			<%
 				out.println("<td>"+member.getM_NO()+"</td>");
 				out.println("<td>"+member.getM_NAME()+"</td>");
-				out.println("<td>"+member.getP_CODE()+"</td>");
-				out.println("<td>"+member.getP_SCHOOL()+"</td>");
+				
+				String code = member.getP_CODE();
+				String codeName = null;
+				switch(code){
+					case "P1": codeName = "A정당"; break;
+					case "P2": codeName = "B정당"; break;
+					case "P3": codeName = "C정당"; break;
+					case "P4": codeName = "D정당"; break;
+					case "P5": codeName = "E정당"; break;		
+				}
+				out.println("<td>"+codeName+"</td>");
+				
+				String school = member.getP_SCHOOL();
+				String schoolName = null;
+				switch(school){
+					case "1": schoolName = "고졸"; break;
+					case "2": schoolName = "학사"; break;
+					case "3": schoolName = "석사"; break;
+					case "4": schoolName = "박사"; break;		
+				}
+				out.println("<td>"+schoolName+"</td>");
 				out.println("<td>"+member.getM_JUMIN()+"</td>");
 				out.println("<td>"+member.getM_CITY()+"</td>");
 				out.println("<td>"+member.getTel()+"</td>");
@@ -47,5 +66,6 @@
 		</table>
 	</section>
 <%@ include file="../include/footer.jsp"%>
+</div>
 </body>
 </html>
