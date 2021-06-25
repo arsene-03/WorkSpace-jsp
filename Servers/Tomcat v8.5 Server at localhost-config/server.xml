@@ -180,7 +180,12 @@
       <Context docBase="MovieSite" path="/MovieSite" reloadable="true" source="org.eclipse.jst.jee.server:MovieSite">
       	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:XE" username="greenJSP"/>
       </Context>
-      <Context docBase="VoteProgram" path="/VoteProgram" reloadable="true" source="org.eclipse.jst.jee.server:VoteProgram"/></Host>
+      <Context docBase="VoteProgram" path="/VoteProgram" reloadable="true" source="org.eclipse.jst.jee.server:VoteProgram"/>
+      	
+      <Context docBase="BoardProgram" path="/BoardProgram" reloadable="true" source="org.eclipse.jst.jee.server:BoardProgram">
+      	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:XE" username="greenJSP"/>
+      </Context>
+      </Host>
     </Engine>
   </Service>
 </Server>

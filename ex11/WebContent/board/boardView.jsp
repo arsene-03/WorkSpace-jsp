@@ -23,7 +23,7 @@
 		<tr>
 			<th>작성일</th>
 			<td><fmt:formatDate value="${board.writedate}"/></td>
-			<th>조회수</th>
+			<th>조회수$</th>
 			<td>${board.readcount}</td>
 		</tr>
 		<tr>
