@@ -220,7 +220,31 @@ public class BoardDAO {
 		}
 	}
 	
-	
+	public void writeBoard(String writer, String subject, String content) { //writer subject content time
+		String sql = "INSERT INTO board_tbl VALUES (board_seq2.nextval,?,?,?,?)";
+		
+		Timestamp time = new Timestamp(System.currentTimeMillis());
+		
+		
+		Connection conn = null;
+		PreparedStatement psmt = null;
+
+		try {
+			conn = DBManager.getConnection();
+			psmt = conn.prepareStatement(sql);
+			psmt.setString(1, writer);
+			psmt.setString(2, subject);
+			psmt.setString(3, content);
+			psmt.setTimestamp(4, time);
+			
+			psmt.execute();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBManager.Close(conn, psmt);
+		}
+	}
+
 	
 	
 	

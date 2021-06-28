@@ -8,6 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <title>게시판 리스트 페이지</title>
+<link type="text/css" rel="stylesheet" href="css/board.css">
 </head>
 <body>
 	<div id="wrap">
@@ -37,7 +38,7 @@
 					out.println("<td>"+board.getWriter()+"</td>");
 		
 					//제목
-					out.println("<td><a href='BS?command=board_info&idx="+board.getIdx()+"'>"+board.getSubject()+"</td>");
+					out.println("<td class='sub'><a href='BS?command=board_info&idx="+board.getIdx()+"'>"+board.getSubject()+"</td>");
 			
 					//작성일
 					String time = new SimpleDateFormat("yyyy-MM-dd HH:mm").format(board.getTime());
@@ -48,11 +49,15 @@
 				</tr>
 				<tr>
 <%
-					out.println("총 "+count+"개의 게시물이 있습니다.");
+					out.println("<h3>총 "+count+"개의 게시물이 있습니다.</h3>");
 %>
 				</tr>
 		</table>
-			<input type="button" value="작성" onclick="location.href='BS?command=board_write'">
+		<table id="buts">
+			<tr><td>
+			<input type="button" id="but" value="작성" onclick="location.href='BS?command=board_write_form'">
+			</td></tr>
+		</table>
 		</section>	
 		<%@ include file="../include/footer.jsp"%>
 	</div>

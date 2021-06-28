@@ -6,6 +6,7 @@ import com.board.controller.action.Board_info_action;
 import com.board.controller.action.Board_list_action;
 import com.board.controller.action.Board_update_action;
 import com.board.controller.action.Board_update_form_action;
+import com.board.controller.action.Board_write_action;
 import com.board.controller.action.Board_write_form_action;
 import com.board.controller.action.Comment_del_action;
 import com.board.controller.action.Comment_write_action;
@@ -37,8 +38,10 @@ public class ActionFactory {
 			action = new Board_update_action();
 		}else if(command.equals("board_delete")) {
 			action = new Board_del_action();
-		}else if(command.equals("board_write")) {
+		}else if(command.equals("board_write_form")) {
 			action = new Board_write_form_action();
+		}else if(command.equals("board_write")) {
+			action = new Board_write_action();
 		}
 		return action;
 	}

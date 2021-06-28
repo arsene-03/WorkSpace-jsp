@@ -185,7 +185,7 @@
       <Context docBase="BoardProgram" path="/BoardProgram" reloadable="true" source="org.eclipse.jst.jee.server:BoardProgram">
       	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:XE" username="greenJSP"/>
       </Context>
-      </Host>
+      <Context docBase="RegCoursesProgram" path="/RegCoursesProgram" reloadable="true" source="org.eclipse.jst.jee.server:RegCoursesProgram"/></Host>
     </Engine>
   </Service>
 </Server>

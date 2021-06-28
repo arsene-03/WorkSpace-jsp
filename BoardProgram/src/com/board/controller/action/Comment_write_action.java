@@ -25,7 +25,6 @@ public class Comment_write_action implements Action {
 		
 		String url = "BS?command=board_info&idx="+bidx;
 		response.sendRedirect(url);
-
 	}
 
 }
