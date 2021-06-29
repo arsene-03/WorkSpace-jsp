@@ -60,7 +60,7 @@
          APR (HTTP/AJP) Connector: /docs/apr.html
          Define a non-SSL/TLS HTTP/1.1 Connector on port 8080
     -->
-    <Connector URIEncoding="UTF-8" connectionTimeout="20000" port="8085" protocol="HTTP/1.1" redirectPort="8443"/>
+    <Connector URIEncoding="UTF-8" connectionTimeout="20000" port="8085" protocol="HTTP/1.1" redirectPort="8443" relaxedQueryChars="{,:}"/>
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
@@ -153,39 +153,27 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="ex01" path="/ex01" reloadable="true" source="org.eclipse.jst.jee.server:ex01"/>
-      <Context docBase="ex02" path="/ex02" reloadable="true" source="org.eclipse.jst.jee.server:ex02"/>
-      <Context docBase="Practice" path="/Practice" reloadable="true" source="org.eclipse.jst.jee.server:Practice"/>
-      <Context docBase="ex03" path="/ex03" reloadable="true" source="org.eclipse.jst.jee.server:ex03"/>
-      <Context docBase="ex04" path="/ex04" reloadable="true" source="org.eclipse.jst.jee.server:ex04"/>
-      <Context docBase="ex07" path="/ex07" reloadable="true" source="org.eclipse.jst.jee.server:ex07"/>
-      <Context docBase="ex08" path="/ex08" reloadable="true" source="org.eclipse.jst.jee.server:ex08"/>
-      <Context docBase="ex05" path="/ex05" reloadable="true" source="org.eclipse.jst.jee.server:ex05"/>
-      <Context docBase="ex06" path="/ex06" reloadable="true" source="org.eclipse.jst.jee.server:ex06"/>
-      <Context docBase="ex09" path="/ex09" reloadable="true" source="org.eclipse.jst.jee.server:ex09">
-      	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:XE" username="greenJSP"/>
-      </Context>
       
-      <Context docBase="q04" path="/q04" reloadable="true" source="org.eclipse.jst.jee.server:q04">
-      	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:XE" username="greenJSP"/>
-      </Context>
-      <Context docBase="ex10" path="/ex10" reloadable="true" source="org.eclipse.jst.jee.server:ex10"/>
-      <Context docBase="ex10_product" path="/ex10_product" reloadable="true" source="org.eclipse.jst.jee.server:ex10_product">
-      	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:XE" username="greenJSP"/>
-      </Context>
-      <Context docBase="ex11" path="/ex11" reloadable="true" source="org.eclipse.jst.jee.server:ex11"> 
-      	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:XE" username="greenJSP"/>
-      </Context>
       
-      <Context docBase="MovieSite" path="/MovieSite" reloadable="true" source="org.eclipse.jst.jee.server:MovieSite">
-      	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:XE" username="greenJSP"/>
-      </Context>
-      <Context docBase="VoteProgram" path="/VoteProgram" reloadable="true" source="org.eclipse.jst.jee.server:VoteProgram"/>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       	
-      <Context docBase="BoardProgram" path="/BoardProgram" reloadable="true" source="org.eclipse.jst.jee.server:BoardProgram">
-      	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:XE" username="greenJSP"/>
-      </Context>
-      <Context docBase="RegCoursesProgram" path="/RegCoursesProgram" reloadable="true" source="org.eclipse.jst.jee.server:RegCoursesProgram"/></Host>
+      
+      <Context docBase="RegCoursesProgram" path="/RegCoursesProgram" reloadable="true" source="org.eclipse.jst.jee.server:RegCoursesProgram"/><Context docBase="AjaxTest01" path="/AjaxTest01" reloadable="true" source="org.eclipse.jst.jee.server:AjaxTest01"/></Host>
     </Engine>
   </Service>
 </Server>

@@ -1,20 +1,4 @@
 #Tomcat publish data
-#Mon Jun 28 18:01:36 KST 2021
+#Tue Jun 29 17:59:44 KST 2021
+org.eclipse.jst.jee.server\:AjaxTest01=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\AjaxTest01
 org.eclipse.jst.jee.server\:RegCoursesProgram=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\RegCoursesProgram
-org.eclipse.jst.jee.server\:MovieSite=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\MovieSite
-org.eclipse.jst.jee.server\:ex11=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex11
-org.eclipse.jst.jee.server\:ex10=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex10
-org.eclipse.jst.jee.server\:VoteProgram=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\VoteProgram
-org.eclipse.jst.jee.server\:q04=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\q04
-org.eclipse.jst.jee.server\:ex10_product=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex10_product
-org.eclipse.jst.jee.server\:ex09=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex09
-org.eclipse.jst.jee.server\:ex08=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex08
-org.eclipse.jst.jee.server\:ex07=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex07
-org.eclipse.jst.jee.server\:BoardProgram=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\BoardProgram
-org.eclipse.jst.jee.server\:ex06=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex06
-org.eclipse.jst.jee.server\:ex05=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex05
-org.eclipse.jst.jee.server\:ex04=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex04
-org.eclipse.jst.jee.server\:ex03=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex03
-org.eclipse.jst.jee.server\:ex02=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex02
-org.eclipse.jst.jee.server\:ex01=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex01
-org.eclipse.jst.jee.server\:Practice=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\Practice
