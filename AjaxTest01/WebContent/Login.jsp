@@ -14,21 +14,22 @@
         <input type="hidden" name="reid" id="reid">
 		이름: <input type="text" name="userName" id="userName"><br>
 		비밀번호 : <input type="password" name="userPwd" id="userPwd"><br>
-        <input type="submit" value="회원가입" onclick="goo()">
+        <input type="submit" value="회원가입" onclick="return goo()">
     </form>
 <script>
     function idChk(){
         var req = new XMLHttpRequest();
         var userId = document.getElementById("userId").value;
-        var reid = document.getElementById("reid").value;
-
+        var reid = document.getElementById("reid");
+        
         req.open("GET","LS?userId="+userId);
         req.send(userId);
 
         req.onreadystatechange = function(){
         	if((req.readyState==4)&&(req.status==200)){
             	alert(req.responseText);
-            	reid=req.responseText;
+            	reid.value=req.responseText;
+            	alert("reid 값 : "+reid)
         	}
     	};
     }

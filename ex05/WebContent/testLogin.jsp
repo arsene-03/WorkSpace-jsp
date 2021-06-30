@@ -6,9 +6,9 @@ String id = "green";
 String pwd = "1234";
 String name = "그린";
 
-String userId = request.getParameter("userId");
-String userPwd = request.getParameter("userPwd");
-
+String userId = request.getParameter(er("userPwd");
+"userId");
+String userPwd = request.getParamet
 if(id.equals(userId)&&pwd.equals(userPwd)){
 	session.setAttribute("userId", userId);
 	session.setAttribute("userName", name);

@@ -9,7 +9,7 @@
 <head>
 <meta charset="UTF-8">
 <title>게시물 조회 페이지</title>
-<link type="text/css" rel="stylesheet" href="css/board.css">
+<link type="text/css" rel="stylesheet" href="../css/board.css">
 </head>
 <body>
 	<div id="wrap">

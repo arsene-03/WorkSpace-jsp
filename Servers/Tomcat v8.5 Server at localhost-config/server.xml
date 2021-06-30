@@ -173,7 +173,7 @@
       
       	
       
-      <Context docBase="RegCoursesProgram" path="/RegCoursesProgram" reloadable="true" source="org.eclipse.jst.jee.server:RegCoursesProgram"/><Context docBase="AjaxTest01" path="/AjaxTest01" reloadable="true" source="org.eclipse.jst.jee.server:AjaxTest01"/></Host>
+      <Context docBase="RegCoursesProgram" path="/RegCoursesProgram" reloadable="true" source="org.eclipse.jst.jee.server:RegCoursesProgram"/><Context docBase="AjaxTest01" path="/AjaxTest01" reloadable="true" source="org.eclipse.jst.jee.server:AjaxTest01"/><Context docBase="ex09" path="/ex09" reloadable="true" source="org.eclipse.jst.jee.server:ex09"/><Context docBase="StudentScore" path="/StudentScore" reloadable="true" source="org.eclipse.jst.jee.server:StudentScore"/><Context docBase="BoardProgram" path="/BoardProgram" reloadable="true" source="org.eclipse.jst.jee.server:BoardProgram"/></Host>
     </Engine>
   </Service>
 </Server>
