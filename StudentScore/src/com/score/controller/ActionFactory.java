@@ -25,7 +25,10 @@ public class ActionFactory {
 			action = new signup_action();
 		}else if(command.equals("login_action")) {
 			action = new login_action();
+		}else if(command.equals("selectScore_action")) {
+			//action = new selectScore_action();
 		}
+		
 		return action;
 	}
 	

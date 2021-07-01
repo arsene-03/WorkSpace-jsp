@@ -9,8 +9,7 @@
 </head>
 <body>
 	<div id="wrap">
-	
-		<section>
+		<section id="middle">
 			<div id="loginform">
 			<form action="SS" method="POST">
 				<input type="hidden" name="command" value="login_action">
@@ -33,13 +32,9 @@
 					</td>
 					</tr>
 				</table>
-				<table >
-					
-				</table>
 			</form>
 			</div>
 		</section>
-
 	</div>
 </body>
 </html>

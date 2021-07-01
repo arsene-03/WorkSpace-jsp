@@ -3,7 +3,7 @@
 }
 #top,#bottom{
 	height:9vh;
-	border: solid 1px; 
+	border: solid 1px black; 
 	text-align: center;
 	line-height: 9vh;
 	background: rgb(45,90,210);
@@ -15,8 +15,18 @@
 	font-weight: 500;
 	font-size: 20px;
 }
-#section{
-	height: 80vh;
+#middle{
+	pedding: 10%;
+	position: inherit;
+	margin: 2px auto;
+	border: solid 1px black;
+	height: 79vh;
+}
+#middle table{
+	border: solid 1px black;
+	position: absolute;
+	margin-top:125px;
+	margin-left:59px;
 }
 #loginform{
 	position: absolute;
@@ -32,11 +42,4 @@
 #but{
 	padding-top: 10px;
 	text-align: right;
-}
-table {
-	width: 100%;
-	text-align: center;
-}
-table th{
-	background: lime;
 }

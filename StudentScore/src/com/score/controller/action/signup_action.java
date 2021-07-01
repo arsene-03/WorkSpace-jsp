@@ -13,7 +13,7 @@ public class signup_action implements Action {
 
 	@Override
 	public void excute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String url = "index.jsp";
+		String url = "SS?command=login_form_action";
 		
 		String userId = request.getParameter("userId");
 		String userPwd = request.getParameter("userPwd");

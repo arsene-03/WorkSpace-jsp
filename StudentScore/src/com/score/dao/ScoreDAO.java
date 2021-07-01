@@ -48,37 +48,71 @@ public class ScoreDAO {
 	}
 	
 	
-	public boolean loginChkStu(String userId) {
+	public MemberDTO loginChkStu(String userId) {
 		
-		String sql = "SELECT * FROM student_tbl WHERE stuId='"+userId+"'";
+		String sql = "SELECT * FROM student_tbl WHERE stuId=?";
+		MemberDTO dto = new MemberDTO();
 		
 		Connection conn =null;
-		Statement stmt = null;
+		PreparedStatement psmt = null;
 		ResultSet rs = null;
 		
 		try {
 			conn = DBManager.getConnection();
-			stmt = conn.createStatement();
-			rs = stmt.executeQuery(sql);
+			psmt = conn.prepareStatement(sql);
+			psmt.setString(1, userId);
 			
-			MemberDTO dto = new MemberDTO();
+			rs = psmt.executeQuery();
+			
+			
 			while(rs.next()) {
 				dto.setUserId(rs.getString("stuId"));
-				dto.setUserPwd(rs.getString("userPwd"));
-				dto.setUserName(rs.getString("userName"));
-				dto.setUserClass(rs.getString("userClass"));
+				dto.setUserPwd(rs.getString("stuPwd"));
+				dto.setUserName(rs.getString("stuName"));
+				dto.setUserClass(rs.getString("stuClass"));
 				dto.setType("student");
 			}
-			if(dto.getUserId()==null) {
-				return false;
-			}
+			
 			
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			DBManager.Close(conn, stmt, rs);
+			DBManager.Close(conn, psmt, rs);
 		}
-		return true;
+		return dto;
+	}
+
+	public MemberDTO loginChkTea(String userId) {
+		String sql = "SELECT * FROM teacher_tbl WHERE teaId=?";
+		MemberDTO dto = new MemberDTO();
+		
+		Connection conn =null;
+		PreparedStatement psmt = null;
+		ResultSet rs = null;
+		
+		try {
+			conn = DBManager.getConnection();
+			psmt = conn.prepareStatement(sql);
+			psmt.setString(1, userId);
+			
+			rs = psmt.executeQuery();
+			
+			
+			while(rs.next()) {
+				dto.setUserId(rs.getString("teaId"));
+				dto.setUserPwd(rs.getString("teaPwd"));
+				dto.setUserName(rs.getString("teaName"));
+				dto.setUserClass(rs.getString("teaClass"));
+				dto.setType("teacher");
+			}
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBManager.Close(conn, psmt, rs);
+		}
+		return dto;
 	}
 	
 	

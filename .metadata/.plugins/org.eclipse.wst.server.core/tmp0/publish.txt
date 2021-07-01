@@ -1,7 +1,8 @@
 #Tomcat publish data
-#Wed Jun 30 17:59:45 KST 2021
+#Thu Jul 01 18:02:43 KST 2021
 org.eclipse.jst.jee.server\:AjaxTest01=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\AjaxTest01
 org.eclipse.jst.jee.server\:ex09=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\ex09
 org.eclipse.jst.jee.server\:BoardProgram=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\BoardProgram
+org.eclipse.jst.jee.server\:VoteProgram=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\VoteProgram
 org.eclipse.jst.jee.server\:StudentScore=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\StudentScore
 org.eclipse.jst.jee.server\:RegCoursesProgram=C\:\\Study\\IDE\\Server\\apache-tomcat-8.5.66\\wtpwebapps\\RegCoursesProgram

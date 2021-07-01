@@ -49,3 +49,17 @@
 
 6월 30, 2021 09:39:08.536 NEW SESSION
 6월 30, 2021 09:39:08.536 [6416:4632:0630/093908.534:ERROR:device_event_log_impl.cc(214)] [09:39:08.535] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+
+7월 01, 2021 15:25:47.197 NEW SESSION
+7월 01, 2021 15:25:47.197 [8800:3236:0701/152547.195:ERROR:device_event_log_impl.cc(214)] [15:25:47.195] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+7월 01, 2021 15:37:02.224 [8800:3236:0701/153702.224:ERROR:device_event_log_impl.cc(214)] [15:37:02.226] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
+7월 01, 2021 16:31:28.919 [4100:10196:0701/163128.919:ERROR:device_event_log_impl.cc(214)] [16:31:28.919] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+7월 01, 2021 16:38:03.129 [908:10092:0701/163803.129:ERROR:device_event_log_impl.cc(214)] [16:38:03.128] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+7월 01, 2021 16:46:44.497 [908:10092:0701/164644.497:ERROR:device_event_log_impl.cc(214)] [16:46:44.505] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
+7월 01, 2021 16:52:32.578 [8644:7660:0701/165232.578:ERROR:device_event_log_impl.cc(214)] [16:52:32.578] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+7월 01, 2021 17:39:57.284 [1788:5636:0701/173957.284:ERROR:device_event_log_impl.cc(214)] [17:39:57.284] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+7월 01, 2021 17:42:42.288 [1788:5636:0701/174242.288:ERROR:device_event_log_impl.cc(214)] [17:42:42.280] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
+7월 01, 2021 17:45:06.65 [1016:1688:0701/174506.064:ERROR:device_event_log_impl.cc(214)] [17:45:06.064] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+7월 01, 2021 17:45:11.514 [5652:7072:0701/174511.514:ERROR:device_event_log_impl.cc(214)] [17:45:11.514] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+7월 01, 2021 17:45:28.631 [5652:7072:0701/174528.631:ERROR:device_event_log_impl.cc(214)] [17:45:28.635] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
+7월 01, 2021 18:02:46.304 [6956:756:0701/180246.304:ERROR:device_event_log_impl.cc(214)] [18:02:46.304] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.

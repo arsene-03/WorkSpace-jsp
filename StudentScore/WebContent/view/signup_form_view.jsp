@@ -10,8 +10,8 @@
 <body>
 	<div id="wrap">
 		<%@include file="../include/header.jsp" %>
-		<section>
-			<div id="">
+		<section id="middle">
+			
 			<form action="SS" method="POST">
 				<input type="hidden" name="command" value="signup_action">
 				<table>
@@ -43,11 +43,7 @@
 						</td>
 					</tr>
 				</table>
-				<table >
-					
-				</table>
 			</form>
-			</div>
 		</section>
 		<%@include file="../include/footer.jsp" %>
 	</div>
