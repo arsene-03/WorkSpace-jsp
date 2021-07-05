@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=ex11/src&lt;com.board.controller.action{Action.java[Action" modifiers="513" timestamp="1623898910738"/>
-<typeInfo handle="=VoteProgram/src&lt;com.vote.controller.action{Action.java[Action" modifiers="513" timestamp="1624348148116"/>
-<typeInfo handle="=VoteProgram/C:\/Program Files\/Java\/jre1.8.0_291\/lib\/rt.jar=/owner.project.facets=/java=/=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;com.sun.corba.se.spi.orbutil.fsm(Action.class[Action" modifiers="1537" timestamp="1619600226878"/>
-<typeInfo handle="=BoardProgram/src&lt;com.board.controller.action{Action.java[Action" modifiers="513" timestamp="1624583036121"/>
-<typeInfo handle="=RegCoursesProgram/src&lt;com.course.controller.action{Action.java[Action" modifiers="513" timestamp="1625033605240"/>
-<typeInfo handle="=StudentScore/src&lt;com.score.controller.action{Action.java[Action" modifiers="513" timestamp="1625033651509"/>
+<typeInfo handle="=StudentScore/src&lt;com.score.controller.action{Action.java[Action" modifiers="513" timestamp="1625136447206"/>
 </typeInfoHistroy>

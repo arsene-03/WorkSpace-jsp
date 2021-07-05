@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.board.vo.BoardVO"/>
-<fullyQualifiedTypeName name="com.board.controller.action.Comment_del_action"/>
-<fullyQualifiedTypeName name="com.board.controller.action.Comment_write_action"/>
-<fullyQualifiedTypeName name="com.board.controller.action.Board_update_action"/>
 <fullyQualifiedTypeName name="com.board.controller.action.Board_update_form_action"/>
 <fullyQualifiedTypeName name="com.board.db.DBManager"/>
 <fullyQualifiedTypeName name="com.board.controller.action.Board_del_action"/>
@@ -52,12 +48,16 @@
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="com.score.controller.action.login_action"/>
-<fullyQualifiedTypeName name="com.score.dao.ScoreDAO"/>
 <fullyQualifiedTypeName name="java.sql.Statement"/>
+<fullyQualifiedTypeName name="com.score.controller.action.selectOwnScore_action"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="com.score.dto.MemberDTO"/>
+<fullyQualifiedTypeName name="com.score.dao.ScoreDAO"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="com.score.db.DBManager"/>
-<fullyQualifiedTypeName name="com.score.dto.MemberDTO"/>
-<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="com.score.dto.ScoreDTO"/>
 <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="org.apache.catalina.ha.backend.Sender"/>
+<fullyQualifiedTypeName name="com.score.controller.action.selectOwnSocre_list_Form_action"/>
 </qualifiedTypeNameHistroy>

@@ -7,6 +7,7 @@ import java.sql.Statement;
 
 import com.score.db.DBManager;
 import com.score.dto.MemberDTO;
+import com.score.dto.ScoreDTO;
 
 public class ScoreDAO {
 	private ScoreDAO() {};
@@ -113,6 +114,40 @@ public class ScoreDAO {
 			DBManager.Close(conn, psmt, rs);
 		}
 		return dto;
+	}
+
+	public ScoreDTO seletOwnScore(String stuName) {
+		String sql = "SELECT * FROM score_tbl WHERE stuName=?";
+		
+		Connection conn = null;
+		PreparedStatement psmt = null;
+		ResultSet rs = null;
+		
+		ScoreDTO sdto = new ScoreDTO();
+		
+		try {
+			conn = DBManager.getConnection();
+			psmt = conn.prepareStatement(sql);
+			psmt.setString(1, stuName);
+			
+			rs= psmt.executeQuery();
+			
+			while(rs.next()) {
+				sdto.setStuName(rs.getString("stuName"));
+				sdto.setKorScore(rs.getInt("korScore"));
+				sdto.setEngScore(rs.getInt("engScore"));
+				sdto.setMathScore(rs.getInt("mathScore"));
+				sdto.setSciScore(rs.getInt("sciScore"));
+				sdto.setSocScore(rs.getInt("socScore"));
+				
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			
+		} finally {
+			DBManager.Close(conn, psmt, rs);
+		}
+		return sdto;
 	}
 	
 	

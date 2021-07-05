@@ -19,6 +19,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\Study\WorkSpace-jsp"/>
 			<item value="C:\Study\WorkSpace-jsp\MovieSite"/>
 			<item value="C:\Study\WorkSpace-jsp\ex06"/>
 			<item value="C:\Study\WorkSpace-jsp\ex05"/>

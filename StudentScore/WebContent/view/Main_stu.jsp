@@ -12,6 +12,7 @@
 <body>
 		<div id="wrap">
 		<%@include file="../include/header.jsp" %>
+		<%@include file="../include/nav_stu.jsp" %>
 		<section id="middle">
 			<%
 				HttpSession sess = request.getSession();
