@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mybatis.mapper.member">
+
+	<resultMap type="memberVO" id="memVo">
+		<result column="id" property="id"/>
+		<result column="name" property="name"/>
+		<result column="email" property="email"/>
+		<result column="password" property="password"/>
+		<result column="regdate" property="regdate"/>
+	</resultMap>
+	
+	<resultMap type="java.util.HashMap" id="memResult">
+		<result column="id" property="id"/>
+		<result column="name" property="name"/>
+		<result column="email" property="email"/>
+		<result column="password" property="password"/>
+		<result column="regdate" property="regdate"/>
+	</resultMap>
+
+  <select id="selectAll" resultMap="memVo"><!-- id : 메서드 이름 / resultMap : 쿼리 실행 결과(객체) , resultType : 쿼리 실행 결과(기본타입) -->
+    SELECT * 
+    FROM member
+  </select> 
+  
+  <select id="selectAllToHash" resultMap="memResult"><!--  객체가 아닌 해시맵으로도 데이터를 추출할 수 있다. -->
+    SELECT * 
+    FROM member
+  </select> 
+  
+  <select id="selectCNT" resultType="int">
+  	SELECT COUNT(*) FROM member
+  </select>
+  
+  <select id="selectByEmail" resultType="memberVO" parameterType="String">
+  	SELECT * FROM member
+  	WHERE email=#{email}
+  </select>
+  
+  
+</mapper>
