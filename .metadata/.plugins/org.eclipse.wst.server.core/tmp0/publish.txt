@@ -1,8 +1,3 @@
 #Tomcat publish data
-#Fri Jul 02 13:12:54 KST 2021
-org.eclipse.jst.jee.server\:BoardProgram=D\:\\Study\\IDE\\server\\apache-tomcat-8.5.66\\wtpwebapps\\BoardProgram
-org.eclipse.jst.jee.server\:VoteProgram=D\:\\Study\\IDE\\server\\apache-tomcat-8.5.66\\wtpwebapps\\VoteProgram
-org.eclipse.jst.jee.server\:Practice=D\:\\Study\\IDE\\server\\apache-tomcat-8.5.66\\wtpwebapps\\Practice
-org.eclipse.jst.jee.server\:StudentScore=D\:\\Study\\IDE\\server\\apache-tomcat-8.5.66\\wtpwebapps\\StudentScore
-org.eclipse.jst.jee.server\:ex03=D\:\\Study\\IDE\\server\\apache-tomcat-8.5.66\\wtpwebapps\\ex03
-org.eclipse.jst.jee.server\:RegCoursesProgram=D\:\\Study\\IDE\\server\\apache-tomcat-8.5.66\\wtpwebapps\\RegCoursesProgram
+#Thu Jul 22 10:53:32 KST 2021
+org.eclipse.jst.jee.server\:mybatis01=D\:\\Study\\IDE\\server\\apache-tomcat-8.5.66\\wtpwebapps\\mybatis01

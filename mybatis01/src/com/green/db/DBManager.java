@@ -13,7 +13,7 @@ public class DBManager {  //데이터베이스와 연결을 위한 객체
 		String driver = "oracle.jdbc.driver.OracleDriver"; //드라이버
 		String url = "jdbc:oracle:thin:@localhost:1521:XE";  //주소:포트:sid
 		String uId = "greenJSP"; //계정
-		String uPw = "jsp1234"; //비밀번호
+		String uPw = "1234"; //비밀번호
 		
 		try {
 			Class.forName(driver);

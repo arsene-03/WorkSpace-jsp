@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.board.controller.action.Board_update_form_action"/>
-<fullyQualifiedTypeName name="com.board.db.DBManager"/>
-<fullyQualifiedTypeName name="com.board.controller.action.Board_del_action"/>
 <fullyQualifiedTypeName name="com.board.controller.action.Board_write_form_action"/>
 <fullyQualifiedTypeName name="com.board.controller.action.Board_write_action"/>
 <fullyQualifiedTypeName name="com.board.dao.BoardDAO"/>
@@ -58,6 +55,9 @@
 <fullyQualifiedTypeName name="com.score.dto.ScoreDTO"/>
 <fullyQualifiedTypeName name="org.apache.catalina.ha.backend.Sender"/>
 <fullyQualifiedTypeName name="com.score.controller.action.selectOwnSocre_list_Form_action"/>
-<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+<fullyQualifiedTypeName name="com.green.vo.MemberVO"/>
+<fullyQualifiedTypeName name="com.green.dao.MemberDAO2"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 </qualifiedTypeNameHistroy>

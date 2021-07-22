@@ -39,5 +39,21 @@
   	WHERE email=#{email}
   </select>
   
+  <!-- 데이터 삽입 -->
+  <insert id="insertMember" parameterType="memberVO">
+  	INSERT INTO member
+  	Values(MEMBER_SEQ.nextval,#{email},#{password},#{name},sysdate)
+  </insert>
   
+  <!-- 데이터 수정 -->
+  <update id="updateMember" parameterType="memberVO">
+  	UPDATE member SET name=#{name}, password=#{password}
+  	WHERE email=#{email}
+  </update>
+  
+  <!-- 데이터 삭제 -->
+  <delete id="deleteMember" parameterType="memberVO">
+  	DELETE FROM member
+  	WHERE email=#{email}
+  </delete>
 </mapper>

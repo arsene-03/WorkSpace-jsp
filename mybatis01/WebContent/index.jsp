@@ -12,6 +12,9 @@
 <a href="<c:url value="http://localhost:8090/mybatis01/SS"/>">[회원 목록 조회 - HashMap]</a>
 <a href="<c:url value="http://localhost:8090/mybatis01/MC"/>">[회원 수 조회]</a>
 <a href="<c:url value="http://localhost:8090/mybatis01/MSE"/>">[회원 이메일로 조회]</a>
-
+<br>
+<a href="<c:url value="http://localhost:8090/mybatis01/AM"/>">[회원추가]</a>
+<a href="<c:url value="http://localhost:8090/mybatis01/UM"/>">[회원수정]</a>
+<a href="<c:url value="http://localhost:8090/mybatis01/DM"/>">[회원삭제]</a>
 </body>
 </html>
