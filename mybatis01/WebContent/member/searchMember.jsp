@@ -6,14 +6,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>회원 가입 폼</title>
+<title>회원 정보 조회</title>
 </head>
 <body>
-<form action="${contextPath}/AM" method="POST">
-	이메일 : <input type="email" name="email"><br>
-	이름 : <input type="text" name="name"><br>
-	비밀번호 : <input type="password" name="password"><br>
-	<input type="submit" value="추가">
+<form action="${contextPath}/SM" method="POST">
+	검색하고 싶은 이메일 : <input type="email" name="email"><br>
+	검색하고 싶은 이름 : <input type="text" name="name"><br>
+	<input type="submit" value="조회">
 </form>
 </body>
 </html>

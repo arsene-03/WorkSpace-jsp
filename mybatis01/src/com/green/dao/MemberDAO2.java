@@ -92,25 +92,44 @@ public class MemberDAO2 {  //마이바티스 적용 코드
 	
 	public int insertMember(MemberVO mVo) {
 		sqlMapper = getFactory();
-		SqlSession session = sqlMapper.openSession();
+		SqlSession session =sqlMapper.openSession();
 		int cnt = session.insert("mybatis.mapper.member.insertMember",mVo);
-		session.commit(); // 마이 바티스는 자동 커밋을 하고 있지 않으므로 수동으로 커밋을 지정해야 함
+		session.commit();// 마이바티스는 자동 커밋을 하고 있지 않으므로 수동으로 커밋을 지정해야 함
 		return cnt;
 	}
 	
 	public int updateMember(MemberVO mVo) {
 		sqlMapper = getFactory();
-		SqlSession session = sqlMapper.openSession();
+		SqlSession session =sqlMapper.openSession();
 		int cnt = session.update("mybatis.mapper.member.updateMember",mVo);
-		session.commit(); // 마이 바티스는 자동 커밋을 하고 있지 않으므로 수동으로 커밋을 지정해야 함
+		session.commit();// 마이바티스는 자동 커밋을 하고 있지 않으므로 수동으로 커밋을 지정해야 함
 		return cnt;
 	}
 	
 	public int deleteMember(String email) {
 		sqlMapper = getFactory();
-		SqlSession session = sqlMapper.openSession();
+		SqlSession session =sqlMapper.openSession();
 		int cnt = session.delete("mybatis.mapper.member.deleteMember",email);
-		session.commit(); // 마이 바티스는 자동 커밋을 하고 있지 않으므로 수동으로 커밋을 지정해야 함
+		session.commit();// 마이바티스는 자동 커밋을 하고 있지 않으므로 수동으로 커밋을 지정해야 함
 		return cnt;
 	}
+	
+	
+	public List<MemberVO> searchMember(MemberVO mVo){
+		List<MemberVO> list = null;
+		sqlMapper = getFactory();
+		SqlSession session = sqlMapper.openSession();
+		list = session.selectList("mybatis.mapper.member.selectMember", mVo);
+		return list;
+	}
+	public List<MemberVO> foreachSearchMember(List<String> names){
+		List<MemberVO> list = null;
+		sqlMapper = getFactory();
+		SqlSession session = sqlMapper.openSession();
+		list = session.selectList("mybatis.mapper.member.foreachSearch", names);
+		return list;
+	}
+
+	
+	
 }

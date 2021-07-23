@@ -16,10 +16,12 @@
         <property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
         <property name="url" value="jdbc:oracle:thin:@localhost:1521:XE"/>
         <property name="username" value="greenJSP"/>
-        <property name="password" value="1234"/>
+        <property name="password" value="jsp1234"/>
       </dataSource>
     </environment>
   </environments>
+  
+  
   <mappers>
     <mapper resource="mybatis/mapper/member.xml"/>
   </mappers>

@@ -1,6 +1,7 @@
 package com.green.controller;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -13,32 +14,34 @@ import com.green.dao.MemberDAO2;
 import com.green.vo.MemberVO;
 
 
-@WebServlet("/UM")
-public class UpdateMember extends HttpServlet {
+@WebServlet("/SM")
+public class SearchMember extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// 입력 폼으로 이동
-		response.sendRedirect("member/updateMemberForm.jsp");
+		response.sendRedirect("member/searchMember.jsp");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// 입력된 데이터를 DBMS에 저장
 		request.setCharacterEncoding("UTF-8");
+		
 		String email = request.getParameter("email");
 		String name = request.getParameter("name");
-		String password = request.getParameter("password");
 		
-		MemberVO mVo =new MemberVO();
+		MemberVO mVo = new MemberVO();
 		mVo.setEmail(email);
 		mVo.setName(name);
-		mVo.setPassword(password);
 		
 		MemberDAO2 dao2 = MemberDAO2.getInstance();
-		dao2.updateMember(mVo);
+		List<MemberVO> lists= dao2.searchMember(mVo);
 		
-		String url = "index.jsp";
+		request.setAttribute("lists", lists);
+		
+		String url = "member/lists.jsp";
+		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(url);
 		dispatcher.forward(request, response);
+		
 	}
 
 }

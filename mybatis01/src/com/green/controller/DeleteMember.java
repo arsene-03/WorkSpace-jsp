@@ -16,21 +16,22 @@ import com.green.dao.MemberDAO2;
 public class DeleteMember extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//입력 폼으로 이동
+		// 입력 폼으로 이동
 		response.sendRedirect("member/deleteMemberForm.jsp");
 	}
 
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setCharacterEncoding("UTF-8");
-		String email = request.getParameter("email");
-		
-		MemberDAO2 dao2 = MemberDAO2.getInstance();
-		dao2.deleteMember(email);
-		
-		String url = "index.jsp";
-		RequestDispatcher dispatcher = request.getRequestDispatcher(url);
-		dispatcher.forward(request, response);
-				
+		 request.setCharacterEncoding("UTF-8");
+		 
+		 String email = request.getParameter("email");
+		 
+		 MemberDAO2 dao2 = MemberDAO2.getInstance();
+		 dao2.deleteMember(email);
+		 
+		 String url="index.jsp";
+		 RequestDispatcher dispatcher = request.getRequestDispatcher(url);
+		 dispatcher.forward(request, response);
 	}
 
 }
